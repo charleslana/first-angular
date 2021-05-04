@@ -1,0 +1,14 @@
+<h2>Listagem de contatos {{nomeEmpresa}}</h2>
+
+<table>
+    <tr *ngFor="let contato of contatos">
+        <td>{{contato.id}}</td>
+        <td>{{contato.nome}}</td>
+    </tr>
+</table>
+
+<ul>
+    <li *ngFor="let contato of contatos">
+        {{contato.id}} {{contato.nome}}
+    </li>
+</ul>
